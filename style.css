@@ -12,11 +12,16 @@ body{
 	background-color: var(--red);
 }
 
+figure{
+	text-align: center;
+}
+
 footer{
 	width: 100%;
 	background-color: #000;
 	margin: 2rem 0 1rem 0;
 	color: #fff;
+	min-height: 2rem; 
 }
 
 header{
@@ -25,6 +30,10 @@ header{
 
 h2{
 	text-align: center;
+}
+
+img{
+	border: solid 2px;
 }
 
 nav{
@@ -49,13 +58,14 @@ nav ul{
 	justify-content: space-between;
 }
 
+small{
+	padding: .5em;
+}
+
 .contactInfo{
 	list-style: none;
 	margin: 1rem 0;
-}
-
-.projects img{
-	border: solid;
+	line-height: 1.5rem;
 }
 
 .skillsList{

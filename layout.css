@@ -13,33 +13,46 @@
 	margin: 0 auto;
 }
 
+/*tags not to do with grid*/
+img{
+	max-width: 100%;
+}
+
+/*main is a grid*/
 main{
 	display: grid;
 	grid-gap: var(--grid-gap);
 	grid-template-columns: 2fr 1fr;
 }
 
+
+/*the two sections*/
 .projects{
 	display: grid;
 	grid-gap: var(--grid-gap);
-	grid-template-rows: .5fr repeat(3, 5fr);
+	grid-template-rows: 3rem;
 }
 
 .aboutMe{
 	display: grid;
 	grid-gap: var(--grid-gap);
+	grid-template-rows: 3rem;
 }
 
+/*each article is a grid*/
 .projects article{
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-gap: var(--grid-gap);
+	grid-template-columns: 2fr 3fr;
 }
 
-.projects h3{
+.projects article h3{
 	grid-column-start: 1;
 	grid-column-end: -1;
 }
 
-img{
-	width: 100%;
+/*footer*/
+footer{
+	display: flex;
+	justify-content: space-around;
 }

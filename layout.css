@@ -30,3 +30,16 @@ main{
 	grid-gap: var(--grid-gap);
 }
 
+.projects article{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.projects h3{
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+img{
+	width: 100%;
+}

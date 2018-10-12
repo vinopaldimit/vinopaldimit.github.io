@@ -54,6 +54,10 @@ nav ul{
 	margin: 1rem 0;
 }
 
+.projects img{
+	border: solid;
+}
+
 .skillsList{
 	padding: 1rem;
 }

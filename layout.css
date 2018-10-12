@@ -30,13 +30,13 @@ main{
 .projects{
 	display: grid;
 	grid-gap: var(--grid-gap);
-	grid-template-rows: 3rem;
+	grid-template-rows: 2rem;
 }
 
 .aboutMe{
 	display: grid;
 	grid-gap: var(--grid-gap);
-	grid-template-rows: 3rem;
+	grid-template-rows: 2rem;
 }
 
 /*each article is a grid*/

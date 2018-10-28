@@ -5,7 +5,7 @@
 :root {
 	--red: #ff5c5c;
 	--lighterRed: #f99;
-	--darkerRed: #f33;
+	--darkerRed: #f44;
 }
 
 a{
@@ -14,11 +14,11 @@ a{
 }
 
 footer{
-	padding: 2rem auto 1rem auto;
+	margin-top: 1rem;
 }
 
 footer small{
-	padding: .5rem;
+	padding: 2rem;
 }
 
 h1{
@@ -33,6 +33,15 @@ h2{
 
 img{
 	border: inset;
+}
+
+/*image border coloring*/
+#projects img{
+	border-color: var(--darkerRed);
+}
+
+#about img{
+	border-color: #fbfbfb;
 }
 
 nav{
@@ -60,29 +69,58 @@ nav ul li a:hover{
 	background-color: var(--red);
 }
 
+/*ABOUT*/
+
 #about, #contact{
 	background-color: #fff;
+}
+
+#about article{
+	padding: 0 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #about article{
+		padding: 0;
+	}
 }
 
 #about{
 	padding: 1rem;
 	-webkit-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
--moz-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
+	-moz-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
+	box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
 }
 
 #about img{
 	width: 25rem;
 }
 
+#about p, #about a, #about button{
+	margin: .5rem 0;
+}
+
 /*MODAL*/
 .skillModal{
 	position: absolute;
-	color: #fff;
-	background-color: #000;
+	color: #000;
+	background-color: #fff;
+	border: solid;
 	width: 50%;
-	height: 40%;
+	height: 50%;
 	margin: 10rem 25%;
+}
+
+.skillModal button{
+	border: none;
+	margin: .1rem .5rem;
+	background-color: #fff;
+	font-weight: bold;
+}
+
+.skillModal ul{
+	margin-left: 2rem;
 }
 
 .skillModalOpen{
@@ -113,6 +151,21 @@ box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
 	margin: 2rem 0;
 }
 
+#projects p, #projects a, #projects button{
+	margin: .5rem 0;
+}
+
+#projects article div{
+	padding: 0 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #projects article div{
+		padding: 0;
+	}
+}
+
 /*open desc*/
 .desc{
 	display: none;
@@ -125,15 +178,17 @@ box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
 	display: block;
 	font-size: 1rem;
 	text-decoration: underline;
+	cursor: pointer;
+	text-align: left;
 }
 
 /*CONTACT*/
 #contact{
 	-webkit-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
--moz-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
+	-moz-box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
+	box-shadow: 2px 0px 34px 6px rgba(0,0,0,0.38);
 
-height: 10rem;
+	height: 10rem;
 }
 
 #contact ul{
@@ -142,4 +197,8 @@ height: 10rem;
 
 svg{
 	width: 5rem;
+}
+
+svg:hover{
+	color: var(--lighterRed);
 }

@@ -8,51 +8,52 @@
 	--grid-gap: 20px;
 }
 
-.container{
-	width: 70%;
-	margin: 0 auto;
-}
-
-/*tags not to do with grid*/
 img{
 	max-width: 100%;
 }
 
-/*main is a grid*/
-main{
-	display: grid;
-	grid-gap: var(--grid-gap);
-	grid-template-columns: 2fr 1fr;
-}
-
-
-/*the two sections*/
-.projects{
-	display: grid;
-	grid-gap: var(--grid-gap);
-	grid-template-rows: 2rem;
-}
-
-.aboutMe{
-	display: grid;
-	grid-gap: var(--grid-gap);
-	grid-template-rows: 2rem;
-}
-
-/*each article is a grid*/
-.projects article{
-	display: grid;
-	grid-gap: var(--grid-gap);
-	grid-template-columns: 2fr 3fr;
-}
-
-.projects article h3{
-	grid-column-start: 1;
-	grid-column-end: -1;
-}
-
-/*footer*/
 footer{
 	display: flex;
 	justify-content: space-around;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*CONTACT INFO*/
+#contact ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*ABOUT&BIO*/
+#about{
+	display: grid;
+	grid-gap: var(--grid-gap);
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+#about figure{
+	grid-row-start: 1;
+	grid-row-end: -1;
+}
+
+/*SKILL MODAL*/
+.skillModal{
+	display: none;
+}
+
+/*CAROUSEL*/
+.slide{
+	grid-gap: var(--grid-gap);
+	grid-template-columns: 1fr 1fr;
+}
+
+#projects{
+	display: grid;
+	grid-gap: var(--grid-gap);
+	grid-template-columns: 1fr 10fr 1fr;
 }

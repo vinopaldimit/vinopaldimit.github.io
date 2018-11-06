@@ -5,8 +5,8 @@
 
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/layout2.css">
 
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
 </head>
@@ -16,17 +16,26 @@
 			<h1>Jane Vinopal-Dimit</h1>
 			<nav>
 				<ul>
-					<li><a href="#projects">projects</a></li>
 					<li><a href="#about">bio</a></li>
-					<li><a href="#contact">contact me</a></li>
+					<li><a href="#skills">skills</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-
-			<!--MODALS-->
-			<div class="skillModal">
-				<button class="skillModalClose">x</button>
+			<section id="about">
+				<h2>about me</h2>
+				<figure>
+					<img src="images/self2.jpg" alt="">
+				</figure>
+				<article>
+					<p>I'm a musician and a programmer who loves to create. If you're looking for high quality code or mediocre guitar playing, I'm your guy!</p>
+					<p>Gamer, musician, artist, programmer, sci-fi lover, D&amp;D player.</p>
+				</article>
+			</section>
+			<section id="skills">
+				<h2>skills</h2>
 				<ul>
 					<li>Java</li>
 					<li>Python</li>
@@ -40,20 +49,8 @@
 					<li>Git</li>
 					<li>Object Oriented Programming</li>
 				</ul>
-			</div>
-
-			<section id='about'>
-				<figure>
-					<img src="images/self2.jpg" alt="">
-				</figure>
-				<article>
-					<h2>about me</h2>
-					<p>I'm a musician and a programmer who loves to create. If you're looking for high quality code or mediocre guitar playing, I'm your guy!</p>
-					<p>Gamer, musician, artist, programmer, sci-fi lover, D&amp;D player.</p>
-					<button class="skillModalOpen">skills</button>
-				</article>
 			</section>
-			<section id='projects'>
+			<section id="projects">
 				<button class="leftButton"><</button>
 				<div class="carousel">
 					<article class="current slide">
@@ -61,8 +58,7 @@
 							<h2>reviews site</h2>
 							<p>Technologies used: Spring MVC, HTML, Thymeleaf, Java, CSS, HTML</p>
 							<a href="https://github.com/vinopaldimit/reviews-site-full-stack">GitHub Link</a>
-							<button class="descOpen expButton">Expand Description</button>
-							<p class="desc">Made with pair programming. The website contains reviews of dog pictures.</p>
+							<p>Made with pair programming. The website contains reviews of dog pictures.</p>
 						</div>
 						<figure>
 							<img src="images/reviews-site-1.JPG" alt="A picture of one of the pages. It lists links to different dog reviews.">
@@ -74,8 +70,7 @@
 							<h2>virtual pets amok</h2>
 							<p>Technologies used: Java, OOP, TDD</p>
 							<a href="https://github.com/vinopaldimit/virtual-pets-amok">GitHub Link</a>
-							<button class="descOpen2 expButton">Expand Description</button>
-							<p class="desc2">Used OOP to created classes for various kinds of pets. The user interacts with these pets through the console. A continuation of the project Virtual Pet Shelter.</p>
+							<p>Used OOP to created classes for various kinds of pets. The user interacts with these pets through the console. A continuation of the project Virtual Pet Shelter.</p>
 						</div>
 						<figure>
 							<img src="images/virtual-pets-amok.JPG" alt="A photo of the console of the virtual pets amok project.">
@@ -87,8 +82,7 @@
 							<h2>virtual pet shelter</h2>
 							<p>Technologies used: Java, OOP, TDD</p>
 							<a href="https://github.com/vinopaldimit/virtual-pet-shelter">GitHub Link</a>
-							<button class="descOpen3 expButton">Expand Description</button>
-							<p class="desc3">Used OOP to created classes for various kinds of pets. The user interacts with these pets through the console.</p>
+							<p>Used OOP to created classes for various kinds of pets. The user interacts with these pets through the console.</p>
 						</div>
 						<figure>
 							<img src="images/virtual-pet-shelter.JPG" alt="A photo of the console of the virtual pet shelter project.">
@@ -100,7 +94,7 @@
 			</section>
 			<section id='contact'>
 				<h2>contact me</h2>
-				<ul class="contactInfo">
+				<ul>
 					<li><a href="mailto:vinopaldimit@gmail.com"><svg aria-hidden="true" data-prefix="fas" data-icon="envelope-square" class="svg-inline--fa fa-envelope-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"></path></svg></a></li>
 					<li><a href="tel:347-514-1585"><svg aria-hidden="true" data-prefix="fas" data-icon="phone-square" class="svg-inline--fa fa-phone-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM94 416c-7.033 0-13.057-4.873-14.616-11.627l-14.998-65a15 15 0 0 1 8.707-17.16l69.998-29.999a15 15 0 0 1 17.518 4.289l30.997 37.885c48.944-22.963 88.297-62.858 110.781-110.78l-37.886-30.997a15.001 15.001 0 0 1-4.289-17.518l30-69.998a15 15 0 0 1 17.16-8.707l65 14.998A14.997 14.997 0 0 1 384 126c0 160.292-129.945 290-290 290z"></path></svg></a></li>
 					<li><a href="https://linkedin.com/in/jane-vinopal-dimit-765965163"><svg aria-hidden="true" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li>
@@ -109,8 +103,13 @@
 			</section>
 		</main>
 		<footer>
-			<small>&copy;2018, Jane Vinopal-Dimit</small>
-			<small>Icon Credit: <a href="https://fontawesome.com/icons/github-square?style=brands">GitHub Icon</a>, <a href="https://fontawesome.com/icons/linkedin?style=brands">LinkedIn Icon</a>, <a href="https://fontawesome.com/icons/phone-square?style=solid">Phone Icon</a>, <a href="https://fontawesome.com/icons/envelope-square?style=solid">Mail Icon</a>, <a href="https://fontawesome.com/license">License</a></small>
+			<small>&copy;2018 Jane Vinopal-Dimit</small>
+			<small>Icon Credit: 
+				<a href="https://fontawesome.com/icons/github-square?style=brands">GitHub Icon</a>, 
+				<a href="https://fontawesome.com/icons/linkedin?style=brands">LinkedIn Icon</a>, 
+				<a href="https://fontawesome.com/icons/phone-square?style=solid">Phone Icon</a>, 
+				<a href="https://fontawesome.com/icons/envelope-square?style=solid">Mail Icon</a>, <a href="https://fontawesome.com/license">License</a>
+			</small>
 		</footer>
 	</div>
 	<script src="js/dom.js"></script>

@@ -1,0 +1,124 @@
+*{
+	font-family: 'Chakra Petch', Helvetica, Arial, sans-serif;
+}
+
+:root {
+	--red: #ff5c5c;
+	--lighterRed: #f99;
+	--darkerRed: #f44;
+	--sectionPadding: .5rem 1rem 1rem 1rem;
+}
+
+body{
+	background-color: var(--red);
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 1.5rem;
+	padding: .5rem;
+}
+
+h1, h2{
+	text-align: center;
+}
+
+section{
+	margin: 1rem 0;
+	background-color: #fff;
+}
+
+/*header*/
+header nav{
+	background-color: #000;
+	color: #fff;
+	padding: .2rem;
+}
+header ul{
+	list-style: none;
+}
+header a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition-duration: .5s;
+}
+header a:hover{
+	color: var(--lighterRed);
+}
+
+/*bio*/
+#about{
+	padding: var(--sectionPadding);
+}
+#about figure{
+	padding: 0 .8rem;
+	margin: .5rem 0;
+	text-align: center;
+}
+
+/*skills*/
+#skills{
+	padding: var(--sectionPadding);
+}
+#skills ul{
+	margin-left: 1rem;
+}
+
+/*projects*/
+#projects button{
+	background-color: #fff;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.carousel{
+	padding: .5rem 0 1rem 0;
+}
+.slide{
+	display: none;
+}
+.current{
+	display: grid;
+}
+
+/*contact info*/
+#contact{
+	padding: .5rem 0;
+}
+#contact ul{
+	list-style: none;
+}
+
+svg{
+	width: 3rem;
+	color: #000;
+	transition-duration: .5s;
+}
+svg:hover{
+	color: var(--lighterRed);
+}
+
+/*footer*/
+footer{
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 1rem;
+	padding: .2rem;
+}
+footer small{
+	margin: .2rem 0;
+}
+footer a{
+	color: #fff;
+	font-weight: bold;
+	transition-duration: .5s;
+}
+footer a:hover{
+	color: var(--lighterRed);
+}

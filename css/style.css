@@ -92,18 +92,21 @@ footer a:hover{
 	font-size: .8rem;
 }
 
+/*project*/
+
+.project ul{
+	list-style: none;
+}
+
+.project a{
+	display: inline-block;
+}
+
 /*skills*/
 
 #skills li{
-	/*border: solid 1px var(--lighterRed);*/
 	text-decoration: underline var(--lighterRed);
 }
-
-/*
-this was so when smaller, the text would disappear
-.contactText{
-	display: none;
-}*/
 
 @media only screen and (min-width: 400px) {
 	

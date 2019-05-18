@@ -64,6 +64,11 @@ section{
 	margin: .5rem;
 }
 
+.project p, .project a{
+	margin: 1rem;
+	margin-top: 0;
+}
+
 @supports (display: flex) {
 
 	header nav{
@@ -92,11 +97,18 @@ section{
 		flex-wrap: wrap;
 	}
 
-	@media only screen and (min-width: 900px) {
-
+	.project ul{
+		display: flex;
+		justify-content: space-around;
 	}
 
-	@media only screen and (min-width: 1100px) {
+	@media only screen and (min-width: 900px) {
+
+		footer{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
 
 	}
 }
@@ -105,7 +117,7 @@ section{
 
 	@media only screen and (min-width: 900px) {
 
-		img{
+		#about img{
 			padding: 1rem;
 		}
 
@@ -116,12 +128,15 @@ section{
 
 		}
 
+		#portfolio main{
+			grid-template-columns: 1fr 1fr;
+		}
+
 		#about{
     		grid-column: 1 / span 2;
     		margin-bottom: 0;
     		display: grid;
     		grid-template-columns: 1fr 2fr;
-    		/*grid-template-columns: repeat(auto-fill, minmax(100%,1fr))*/
     	}
 
 		#about h2{
@@ -136,11 +151,5 @@ section{
     		margin-top: 0;
     	}
     	
-	}
-
-	@media only screen and (min-width: 1100px) {
-		/*main{
-    		grid-template-columns: 4fr 4fr;
-		}*/
 	}
 }
